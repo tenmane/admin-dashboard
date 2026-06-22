@@ -1,0 +1,94 @@
+:root {
+  --primary-color: hsl(204, 86%, 51%)
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: 1.3fr 8fr;
+}
+
+.nav-bar {
+  background-color: var(--primary-color);
+  display: grid;
+  align-content: start;
+  gap: 5vh;
+  align-items: start;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.nav-header {
+  font-size: 1.5rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-header img {
+  width: 40px;
+}
+
+.nav-main,
+.nav-support {
+  display: grid;
+  row-gap: 2vh;
+  font-size: 1.1rem;
+}
+
+.nav-main a,
+.nav-support a {
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+}
+
+header {}
+
+.upper-header {}
+
+.lower-header {}
+
+.create {}
+
+.projects {}
+
+.project-card {}
+
+.card-text {}
+
+.card-icons {}
+
+.announcements {}
+
+.announcement-block {}
+
+.announcement-header {}
+
+.announcement-content {}
+
+.trending {}
+
+.trending-accs {}
+
+.trending-accs-desc {}
+
+img {
+  width: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 20px;
+}
