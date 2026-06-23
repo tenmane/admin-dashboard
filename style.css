@@ -9,7 +9,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 15% 8fr;
+  grid-template-columns: auto 1fr;
+  height: 100vh;
 }
 
 /*NAVIGATION BAR*/
@@ -18,7 +19,7 @@ body {
   display: grid;
   align-content: start;
   gap: clamp(5px, 5vh, 50px);
-  padding: 10px 20px;
+  padding: 1rem 5rem 0px 2rem;
   font-weight: 600;
 }
 
@@ -166,15 +167,45 @@ header {
 
 .content-container {
   background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  padding: 2rem;
+  gap: clamp(0.5rem, 2vw, 3rem);
 }
 
-.projects {}
+.projects {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+}
 
-.project-card {}
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
 
-.card-text {}
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  border-left: 8px solid orange;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
+}
 
-.card-icons {}
+.card-text p {
+  font-size: 0.85rem;
+  color: rgb(105, 105, 105);
+}
+
+.card-icons {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  gap: 1rem;
+}
 
 .announcements {}
 
