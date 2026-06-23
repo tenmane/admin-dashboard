@@ -1,5 +1,6 @@
 :root {
-  --primary-color: hsl(204, 86%, 51%)
+  --primary-color: hsl(204, 86%, 51%);
+  --secondary-color: hsl(219, 33%, 92%);
 }
 
 body {
@@ -7,11 +8,11 @@ body {
 }
 
 .container {
-  background-color: pink;
   display: grid;
   grid-template-columns: 15% 8fr;
 }
 
+/*NAVIGATION BAR*/
 .nav-bar {
   background-color: var(--primary-color);
   display: grid;
@@ -57,17 +58,23 @@ main {
   grid-template-rows: 15% 1fr;
 }
 
+/* HEADER */
+
 header {
   display: grid;
-  padding: 1rem 2rem;
+  padding: 0 3.5rem;
   background-color: white;
   align-items: center;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
+
+/*UPPER HEADER*/
 
 .upper-header {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: 40% 20%;
+  grid-template-columns: 50% 20%;
 }
 
 .search-container {
@@ -81,7 +88,8 @@ header {
 .search-container input[type="text"] {
   border: none;
   border-radius: 15px;
-  background-color: rgb(195, 208, 212);
+  background-color: var(--secondary-color);
+  padding: 5px 10px;
 }
 
 .search-container label {
@@ -105,6 +113,8 @@ header {
   font-weight: 600;
 }
 
+/*LOWER HEADER*/
+
 .lower-header {
   display: grid;
   grid-auto-flow: column;
@@ -113,11 +123,50 @@ header {
 }
 
 .profile-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  gap: 0.5rem;
 }
 
-.create {}
+.profile-section img {
+  width: 5rem;
+}
+
+.introduction {
+  font-size: 0.8rem;
+}
+
+.buttons-container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+}
+
+.header-buttons {
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  width: 6.5rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+
+.header-buttons:hover {
+  opacity: 0.8;
+}
+
+.header-buttons:active {
+  opacity: 0.6;
+}
+
+.content-container {
+  background-color: var(--secondary-color);
+}
 
 .projects {}
 
